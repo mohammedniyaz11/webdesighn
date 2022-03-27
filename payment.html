@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="css/2.css">
+  </head>
+  <body>
+    <form action="" class="container">
+      <h1 class="mainheading">Payment form</h1>
+      <br />
+      <h2>Contacts information</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <hr />
+      <div>
+        <fieldset>
+          <legend><h3>Gender</h3></legend>
+          <label for="male" required>Male:</label>
+          <input type="radio" id="male" name="gender" />
+          <label for="female">Female:</label>
+          <input type="radio" id="female" name="gender" />
+        </fieldset>
+      </div>
+      <hr />
+      <div>
+        <label for="address">Addrress: *</label>
+        <textarea name="" id="address" cols="30" rows="10" required></textarea>
+      </div>
+      <hr />
+      <div>
+        <label for="mail">EMail: *</label>
+        <input type="email" id="mail" required />
+      </div>
+      <hr />
+      <div>
+        <label for="pincode">Pincode:</label>
+        <input type="number" id="pincode" card_expire_date>
+      </div>
+      <hr />
+      <h2>Payment Informaation</h2>
+      <hr />
+      <div>
+        <label for="Card_type">Card type:</label>
+        <select name="card_type" id="card" required>
+          <option value="">---Select the card type----</option>
+          <option value="Rupay">Rupay</option>
+          <option value="MasterCard">Mastercard</option>
+          <option value="Visa">Visa</option>
+        </select>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="card_number">Cardnumber</label>
+        <input type="number" id="card_number" name="caardnumber" required/><br /><br />
+        <label for="card_expire_date">Expiration date of card</label>
+        <input type="date" id="card_expire_d"  name="exp_date" required/><br /><br />
+        <label for="cvv">Cv in password</label>
+        <input type="password" required />
+      </div>
+      <hr />
+      <div>
+        <input type="submit" value="Pynow" />
+      </div>
+    </form>
+  </body>
+</html>
